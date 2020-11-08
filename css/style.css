@@ -6,6 +6,15 @@ body {
   min-height: 100vh;
 }
 
+.frame {
+  width: 95vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
 header {
   font-family: "Inconsolata", monospace;
   font-style: normal;
@@ -33,22 +42,15 @@ header p {
   flex: 1;
   font-family: "Space Mono", monospace;
   height: 100%;
+  margin: 12vw 0;
 }
 .contents .PC_left_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 2rem 1rem;
 }
 .contents .PC_left_content img {
   display: block;
   width: 90%;
   max-width: 600px;
-}
-.contents .PC_right_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .contents .PC_right_content section {
   width: 100%;
@@ -59,8 +61,8 @@ header p {
   text-align: left;
   letter-spacing: -0.035em;
   font-weight: bold;
-  font-size: 2rem;
-  margin: 1rem 0.5rem;
+  font-size: 3rem;
+  margin: 2rem 0.5rem;
 }
 .contents .PC_right_content section h2 {
   color: #4F4F4F;
@@ -68,14 +70,15 @@ header p {
   letter-spacing: -0.035em;
   font-size: 1rem;
   width: 18rem;
-  margin: 1rem 0.5rem;
+  margin: 2rem 0.5rem;
+  line-height: 1.5rem;
 }
 .contents .PC_right_content section button {
   width: 216px;
   height: 68px;
   background-color: #333333;
   text-align: center;
-  margin: 1rem 0.5rem;
+  margin: 2rem 0.5rem;
 }
 .contents .PC_right_content section button a {
   color: white;
@@ -86,6 +89,9 @@ footer {
   width: 100%;
   text-align: center;
   margin: 1rem auto;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
 }
 footer small {
   font-family: "Montserrat", sans-serif;
@@ -97,5 +103,10 @@ footer small {
   .grid {
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .contents .PC_right_content section h1 {
+    font-size: 4rem;
   }
 }
