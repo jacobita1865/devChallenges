@@ -1,3 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap");
 body {
-  font-family: Space Mono, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333333;
+  padding: 1rem 0.5rem;
+}
+header p {
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  height: 100%;
+}
+
+.contents {
+  flex: 1;
+  font-family: "Space Mono", monospace;
+  height: 100%;
+}
+.contents .PC_left_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.contents .PC_left_content img {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+}
+.contents .PC_right_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents .PC_right_content section {
+  width: 100%;
+  display: block;
+}
+.contents .PC_right_content section h1 {
+  color: #333333;
+  text-align: left;
+  letter-spacing: -0.035em;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0.5rem;
+}
+.contents .PC_right_content section h2 {
+  color: #4F4F4F;
+  text-align: left;
+  letter-spacing: -0.035em;
+  font-size: 1rem;
+  width: 18rem;
+  margin: 1rem 0.5rem;
+}
+.contents .PC_right_content section button {
+  width: 216px;
+  height: 68px;
+  background-color: #333333;
+  text-align: center;
+  margin: 1rem 0.5rem;
+}
+.contents .PC_right_content section button a {
+  color: white;
+  letter-spacing: -0.035em;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+}
+footer small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
