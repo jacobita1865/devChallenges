@@ -37,7 +37,7 @@
 
 ## Overview
 
-<img src="Screenshot_2020-11-08 404 Not Found.png" alt="screenshot" title="screenshot">
+![Screenshot](https://user-images.githubusercontent.com/50532591/98458929-ee52fa00-21d8-11eb-88c6-5e86793f0a60.png)
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
